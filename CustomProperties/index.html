@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Element</title>
+
+    <style>
+        my-element {
+            --heading-primary: 40px;
+        }
+
+        .segundo {
+            --secondary-color: lime;
+        }
+
+        .tercero {
+            --primary-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <my-element>
+        <span slot="title">Hola desde el componente 1</span>
+        <span slot="body">Hola desde una etiqueta de párrafo</span>
+    </my-element>
+    <my-element class="segundo">
+        <span slot="title">Hola desde el componente 2</span>
+        <span slot="body">Hola desde una etiqueta de párrafo</span>
+    </my-element>
+    <my-element class="tercero">
+        <span slot="title">Hola desde el componente 3</span>
+        <span slot="body">Hola desde una etiqueta de párrafo</span>
+    </my-element>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
